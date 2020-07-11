@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo Cage</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/art-and-design.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="jquery.fancybox.css"/>
+</head>
+<body>
+	<header class="warpper"> 
+		<div class="logo">
+			<a href="#"><img src="img/PhotoCage-logo.png" alt=""></a>
+		</div>
+		<div class="nav__icon">
+			<div class="nav__link__icon">
+				<a href="#" id="menu" class="icon">&#9776;</a>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				
+				<li><div class="box__nav logout">
+						<a href=""><img src="img/logout.png" alt=""></a>
+						<div class="nav__link__logout">
+							<a href="#">Logout</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="box__nav members">
+						<a href="#"><img src="img/members.png" alt=""></a>
+						<div class="nav__link__members">
+							<a href="#">Members</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="box__nav gallery">
+						<a href="#"><img src="img/gallery.png" alt=""></a>
+						<div class="nav__link__gallery">
+							<a href="#">Gallery</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="box__nav home">
+						<a href=""><img src="img/home.png" alt=""></a>
+						<div class="nav__link__home">
+							<a href="#">Home</a>
+						</div>
+					</div>
+				</li>
+				<li>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	<main class="warpper">
+		<div class="upload__box">
+			<form action="#" name="upload_form" method="post">
+				<h1>Please select an image from your computer</h1>
+				<div class="browse__box">
+					<div class="field__wrapper">
+					  <input name="file" type="file" name="file" id="field__file-2" class="field field__file" multiple accept="image/*">
+					   <label class="field__file-wrapper" for="field__file-2">
+					     <div class="field__file-fake"></div>
+					     <div class="field__file-button">Browse</div>
+					     <input class="field__file-submit" type="submit" value="Upload image">  
+					   </label>
+					</div>
+				</div>		
+			</form>
+		</div>
+		<div class="main__content">
+			<div class="main__content-inner">
+				<div class="main__item-box">
+					<div class="main__image">
+						<img src="img/img-item-1.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-1.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>10/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box">
+					<div class="main__image">
+						<img src="img/img-item-2.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-2.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>09/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box">
+					<div class="main__image">
+						<img src="img/img-item-3.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-3.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>09/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box">
+					<div class="main__image">
+						<img src="img/img-item-4.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-4.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>10/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+
+				<div class="main__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-5.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-5.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>05/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-6.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-6.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>05/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-7.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-7.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>04/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-8.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-8.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>04/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="main__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-9.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-9.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>10/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-10.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-10.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>10/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-11.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-11.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>10/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__item-box next__item-box main__box-nextstoke">
+					<div class="main__image">
+						<img src="img/img-item-12.png" alt="">
+						<div class="main__upskale">
+							<a data-fancybox="gallery" href="img/img-item-12.png">
+								<img src="img/upsakle.png" alt="">
+							</a>
+						</div>
+						<div class="main__item-data">
+							<p>10/08/2010</p>
+						</div>
+						<div class="main__naming">
+								<div class="main__naming-name">
+									<a href="#">Lorem ipsum is simply</a>
+								</div>
+								<div class="main__naming-favor">
+									<img src="img/favourite.png" alt="">
+								</div>
+						</div>
+						<div class="main__social">
+							<div class="social__name">
+								<p>
+									Share
+								</p>
+							</div>
+							<div class="social__icons">
+								<ul>
+									<li>
+										<a href="https://www.tumblr.com" target="_blank" 
+											tooltip="share in tumblr" flow="down">
+											<img class="tum__social" src="img/tumbler.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a  href="https://www.facebook.com" target="_blank" 
+											tooltip="share in facebook" flow="down">
+											<img class="fac__social" src="img/Facebook.png" alt=""></a></li>
+									<li>
+										<a href="https://www.pinterest.com" target="_blank" 
+											tooltip="share in pintrest" flow="down">
+											<img class="pin__social" src="img/pintrest.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/compose/tweet" target="_blank"
+											tooltip="share in twitter" flow="down">
+											<img class="last__social" src="img/twittor.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="warpper footer">
+		<div class="footer__iner">
+			<p>© 2013 Photocage app	powered by
+				<a target="_blank" href="http://cssauthor.com" class="footer__link">cssauthor.com</a>
+			</p>
+		</div>
+	</footer>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="fancy.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
