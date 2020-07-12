@@ -439,7 +439,7 @@ footer{
     margin-right: 10px;
   }
   .warpper{
-  max-width: 1050px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: none;
 }
@@ -450,11 +450,14 @@ footer{
   }
 
   .warpper{
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
   padding: none;
 }
-
+  .logo img{
+    width: 200px;
+    margin-top: 50px;
+  }
   .nav__icon a{
     float: right;
     font-size: 45px;
@@ -463,3 +466,25 @@ footer{
     display: block;
   }
 }
+}
+@media screen and (max-width: 665px) {
+  nav{
+    display: none;
+  }
+
+  .warpper{
+  max-width: 420px;
+  margin: 0 auto;
+  padding: none;
+}
+  .logo img{
+    width: 150px;
+    margin-top: 50px;
+  }
+  .nav__icon a{
+    float: right;
+    font-size: 35px;
+    margin-top: 35px;
+    color: #000;
+    display: block;
+  }
