@@ -1,3 +1,14 @@
+menu.onclick = function myFunction() {
+  var x = document.getElementById('myTopnav');
+
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+
+  }
+}
+
 let fields = document.querySelectorAll('.field__file');
     Array.prototype.forEach.call(fields, function (input) {
       let label = input.nextElementSibling,
@@ -14,4 +25,4 @@ let fields = document.querySelectorAll('.field__file');
           label.querySelector('.field__file-fake').innerText = labelVal;
       });
     });
-    
+
