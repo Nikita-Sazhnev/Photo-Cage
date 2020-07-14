@@ -607,6 +607,7 @@ footer{
   border-bottom: 1px solid;
   border-color: gray;
 }
+
 .logout img{
     margin-top: 13px;
     margin-left: 12px;
@@ -631,6 +632,9 @@ footer{
 .nav__link__gallery {
     margin-top: -18px;
     margin-left: 38px;
+}
+.home{
+  border-bottom: none;
 }
 .home img {
     margin-top: 14px;
