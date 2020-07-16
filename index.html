@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="jquery.fancybox.css"/>
 </head>
 <body>
-	<header class="warpper"> 
+	<header class="warpper__header"> 
 		<div class="logo">
 			<a href="#"><img src="img/PhotoCage-logo.png" alt=""></a>
 		</div>
@@ -22,36 +22,46 @@
 		<nav class="topnav" id="myTopnav">
 			<ul>
 				
-				<li><div class="box__nav logout">
-						<a href=""><img src="img/logout.png" alt=""></a>
-						<div class="nav__link__logout">
-							<a href="#">Logout</a>
+					<li>
+						<a href="#">
+							<div class="box__nav logout">
+								<p><img src="img/logout.png" alt=""></p>
+								<div class="nav__link__logout">
+									<p>Logout</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				
+				<li>
+					<a href="#">
+						<div class="box__nav members">
+							<p><img src="img/members.png" alt=""></p>
+							<div class="nav__link__members">
+								<p>Members</p>
+							</div>
 						</div>
-					</div>
+					</a>
 				</li>
 				<li>
-					<div class="box__nav members">
-						<a href="#"><img src="img/members.png" alt=""></a>
-						<div class="nav__link__members">
-							<a href="#">Members</a>
+					<a href="#">
+						<div class="box__nav gallery">
+							<p><img src="img/gallery.png" alt=""></p>
+							<div class="nav__link__gallery">
+								<p>Gallery</p>
+							</div>
 						</div>
-					</div>
+					</a>
 				</li>
 				<li>
-					<div class="box__nav gallery">
-						<a href="#"><img src="img/gallery.png" alt=""></a>
-						<div class="nav__link__gallery">
-							<a href="#">Gallery</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="box__nav home">
-						<a href=""><img src="img/home.png" alt=""></a>
+					<a href="#">
+						<div class="box__nav home">
+						<p><img src="img/home.png" alt=""></p>
 						<div class="nav__link__home">
-							<a href="#">Home</a>
+							<p>Home</p>
 						</div>
 					</div>
+					</a>
 				</li>
 				<li>
 				</li>
@@ -80,11 +90,11 @@
 				<div class="main__item-box">
 					<div class="main__image">
 						<img src="img/img-item-1.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-1.png">
-								<img src="img/upsakle.png" alt="">
+							<a data-fancybox="gallery" href="img/img-item-1.png">	
+								<div class="main__upskale">
+									<img src="img/upsakle.png" alt="">
+								</div>
 							</a>
-						</div>
 						<div class="main__item-data">
 							<p>10/08/2010</p>
 						</div>
@@ -134,11 +144,11 @@
 				<div class="main__item-box next__item-box">
 					<div class="main__image">
 						<img src="img/img-item-2.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-2.png">
+						<a data-fancybox="gallery" href="img/img-item-2.png">
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
+							</div>
 							</a>
-						</div>
 						<div class="main__item-data">
 							<p>09/08/2010</p>
 						</div>
@@ -188,11 +198,11 @@
 				<div class="main__item-box next__item-box">
 					<div class="main__image">
 						<img src="img/img-item-3.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-3.png">
+						<a data-fancybox="gallery" href="img/img-item-3.png">
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>
 						<div class="main__item-data">
 							<p>09/08/2010</p>
 						</div>
@@ -242,11 +252,11 @@
 				<div class="main__item-box next__item-box">
 					<div class="main__image">
 						<img src="img/img-item-4.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-4.png">
+						<a data-fancybox="gallery" href="img/img-item-4.png">
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>
 						<div class="main__item-data">
 							<p>10/08/2010</p>
 						</div>
@@ -299,11 +309,13 @@
 				<div class="main__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-5.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-5.png">
-								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+						<a data-fancybox="gallery" href="img/img-item-5.png">
+							<div class="main__upskale">
+								
+									<img src="img/upsakle.png" alt="">
+								
+							</div>
+						</a>
 						<div class="main__item-data">
 							<p>05/08/2010</p>
 						</div>
@@ -353,11 +365,12 @@
 				<div class="main__item-box next__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-6.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-6.png">
+						<a data-fancybox="gallery" href="img/img-item-6.png">
+							<div class="main__upskale">
+							
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>
 						<div class="main__item-data">
 							<p>05/08/2010</p>
 						</div>
@@ -407,11 +420,12 @@
 				<div class="main__item-box next__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-7.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-7.png">
+						<a data-fancybox="gallery" href="img/img-item-7.png">
+							<div class="main__upskale">
+							
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>	
 						<div class="main__item-data">
 							<p>04/08/2010</p>
 						</div>
@@ -461,11 +475,11 @@
 				<div class="main__item-box next__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-8.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-8.png">
+						<a data-fancybox="gallery" href="img/img-item-8.png">	
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>	
 						<div class="main__item-data">
 							<p>04/08/2010</p>
 						</div>
@@ -517,11 +531,11 @@
 				<div class="main__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-9.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-9.png">
+						<a data-fancybox="gallery" href="img/img-item-9.png">	
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>
 						<div class="main__item-data">
 							<p>10/08/2010</p>
 						</div>
@@ -571,11 +585,11 @@
 				<div class="main__item-box next__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-10.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-10.png">
+						<a data-fancybox="gallery" href="img/img-item-10.png">
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>	
 						<div class="main__item-data">
 							<p>10/08/2010</p>
 						</div>
@@ -625,11 +639,11 @@
 				<div class="main__item-box next__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-11.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-11.png">
+						<a data-fancybox="gallery" href="img/img-item-11.png">
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>	
 						<div class="main__item-data">
 							<p>10/08/2010</p>
 						</div>
@@ -679,11 +693,10 @@
 				<div class="main__item-box next__item-box main__box-nextstoke">
 					<div class="main__image">
 						<img src="img/img-item-12.png" alt="">
-						<div class="main__upskale">
-							<a data-fancybox="gallery" href="img/img-item-12.png">
+							<div class="main__upskale">
 								<img src="img/upsakle.png" alt="">
-							</a>
-						</div>
+							</div>
+						</a>	
 						<div class="main__item-data">
 							<p>10/08/2010</p>
 						</div>

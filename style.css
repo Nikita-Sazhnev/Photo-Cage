@@ -25,6 +25,11 @@ div{
 	width: 1280px;
 	margin: 0 auto;
 	padding: 0 9.45%;
+  overflow: hidden;
+}
+.warpper__header{
+  width: 100%;
+  padding: 0 12%;  
 }
 .logo{
 	float: left;
@@ -40,7 +45,7 @@ div{
 	float: right;
 	text-shadow: 1px 1px white;
 }
-.box__nav a{
+.box__nav p{
 	color: #5e5e5e;
 }
 .home,
@@ -448,8 +453,27 @@ footer{
 
 
 
+@media screen and (max-width: 2000px) {
+  .warpper {
+    width: 1400px;
+}
+.warpper__header{
+  width: 100%;
+  padding: 0 23%;  
+}
 
+}
+@media screen and (max-width: 1440px) {
+  .warpper {
+    width: 1205px;
+    padding: 0px 89px;
+}
+.warpper__header{
+  width: 100%;
+  padding: 0 12%;  
+}
 
+}
 
 @media screen and (max-width: 1150px) {
 
@@ -484,10 +508,11 @@ footer{
 @media screen and (max-width: 1050px) {
 
   .logout{
-  margin-right: 10px;
+  margin-right: -40px;
   }
   .warpper{
-  max-width: 1010px;
+  max-width: 900px;
+  padding: 0 0 0 41px;
 }
 
 @media screen and (max-width: 975px) {
@@ -496,13 +521,13 @@ footer{
   }
 
   .warpper{
-  max-width: 720px;
+  max-width: 666px;
   margin: 0 auto;
   padding:0 30px;
 }
   .logo img{
-    width: 147px;
-    margin-top: 50px;
+    width: 165px;
+    margin-top: 49px;
     margin-left: 0;
   }
   .nav__icon a{
@@ -523,7 +548,7 @@ footer{
     left: -65px;
   }
   .logout{
-    margin-right: 0px;
+    margin-right: -75px;
   }
   header .topnav.responsive{
     height: 215px;
@@ -537,10 +562,46 @@ footer{
   .footer__iner {
     margin-right: 70px;
 }
+.upload__box h1 {
+    font-size: 28px;
+}
+.box__nav {
+    width: 88px;
+}
+.home img {
+    margin-left: 35px;
+}
+.nav__link__home {
+    margin-left: 23px;
+}
+.gallery img {
+    margin-left: 32px;
+}
+.nav__link__gallery {
+    margin-top: 9px;
+    margin-left: 19px;
+}
+.members img {
+    margin-left: 31px;
+}
+.nav__link__members {
+    margin-left: 11px;
+}
+.logout img {
+    margin-left: 37px;
+}
+.nav__link__logout {
+    margin-left: 21px;
 }
 
 
+
 }
+
+
+
+}
+
 @media screen and (max-width: 665px) {
   header{
     min-height: 115px;
@@ -595,14 +656,17 @@ footer{
 .topnav.responsive{
     position: absolute;
     top: 5px;
-    left: 152px;
+    right: 80px;
     z-index: 20;
     height: 200px;
     transition: .4s;
+    display: flex;
+    justify-content: flex-end;
 }
 .box__nav{
   background: #EEEF;
   height: 48px;
+  width: 110px;
   border-right: none;
   border-bottom: 1px solid;
   border-color: gray;
@@ -644,7 +708,9 @@ footer{
     margin-top: -19px;
     margin-left: 38px;
 }
-
+.logout{
+  margin-right: 0px;
+  }
 
 
 
