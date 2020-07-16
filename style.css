@@ -193,18 +193,19 @@ div{
 	box-shadow: 0px 0 11px -8px black;
 	padding: 10px 7px;
 }
-.main__upskale{
-	position: absolute;
-    width: 176px;
-    height: 170px;
-    top: 24px;
-    left: 20px;
+.main__upskale {
+    position: absolute;
+    width: 203px;
+    height: 197px;
+    top: 10px;
+    left: 7px;
     opacity: 0;
     transition: .2s;
+    z-index: 20px;
 }
-.main__upskale img{
-	margin-top: 72px;
-    margin-left: 77px;
+.main__upskale img {
+    margin-top: 81px;
+    margin-left: 90px;
     cursor: pointer;
 }
 .main__upskale:hover{
